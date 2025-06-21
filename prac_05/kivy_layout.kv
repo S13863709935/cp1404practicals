@@ -1,0 +1,17 @@
+#:kivy 1.11.1
+
+<RootWidget>:
+    BoxLayout:
+        orientation: 'vertical'
+        Label:
+            text: 'Hello Kivy!'
+            font_size: 50
+        Button:
+            text: 'Click Me'
+            on_press: root.do_something()
+        Label:
+            text: 'Status: Ready'
+            size_hint_y: 0.2
+        Label:
+            text: "I did this :)"
+            size_hint_y: 0.1
