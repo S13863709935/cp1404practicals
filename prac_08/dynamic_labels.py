@@ -8,8 +8,7 @@ class DynamicLabelsApp(App):
         self.root = Builder.load_file('dynamic_labels.kv')
         names = ["Alice", "Bob", "Charlie", "Diana"]
         for name in names:
-            temp_label = Label(text=name)
-            self.root.ids.main.add_widget(temp_label)
+            self.root.ids.main.add_widget(Label(text=name))
         return self.root
 
 DynamicLabelsApp().run()
