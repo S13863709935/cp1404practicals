@@ -1,0 +1,28 @@
+BoxLayout:
+    orientation: 'vertical'
+    padding: 10
+    spacing: 10
+
+    BoxLayout:
+        orientation: 'horizontal'
+        spacing: 10
+
+        Button:
+            text: '-1'
+            size_hint_x: 0.2
+            on_press: app.handle_increment(-1)
+
+        TextInput:
+            id: input_miles
+            hint_text: 'Enter miles'
+            size_hint_x: 0.6
+            on_text: app.handle_convert(input_miles.text)
+
+        Button:
+            text: '+1'
+            size_hint_x: 0.2
+            on_press: app.handle_increment(1)
+
+    Label:
+        text: app.km_value + ' km'
+        color: (1, 1, 0, 1)  # Yellow
