@@ -4,7 +4,7 @@ from kivy.properties import StringProperty
 
 MILES_TO_KM = 1.60934
 
-class ConvertMilesKmApp(App):
+class MilesConverterApp(App):
     km_value = StringProperty("0.0")
 
     def build(self):
@@ -26,4 +26,4 @@ class ConvertMilesKmApp(App):
         self.root.ids.input_miles.text = str(miles)
         self.handle_convert(str(miles))
 
-ConvertMilesKmApp().run()
+MilesConverterApp().run()
