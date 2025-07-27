@@ -1,4 +1,4 @@
-from taxi import Taxi
+from prac_09.taxi import Taxi
 
 
 def run_tests():
